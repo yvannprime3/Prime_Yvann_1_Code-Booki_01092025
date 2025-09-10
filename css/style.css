@@ -121,6 +121,33 @@ a {
     margin-bottom: 5px;
 }
 
+/******Footer******/
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    background-color: #F2F2F2;
+    margin-top: 50px;
+}
+
+.footer-column {
+    margin: 10px;
+    flex: 1;
+}
+
+.footer-column h3 {
+    margin-bottom: 15px;
+    font-size: 18px;
+}
+
+.footer-column ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-column ul li {
+    margin-bottom: 10px;
+}
 
 
 
