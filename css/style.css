@@ -186,6 +186,43 @@ input[type="submit"] {
     font-size: 18px;   
 }
 
+/******Header-title******/
+
+h1 {
+    font-size: 22px;
+}
+
+.header-title p {
+    margin-bottom: 35px;
+}
+
+/******Filtres******/
+
+.filtres {
+    display: flex;
+    align-items: center;
+    margin: 35px 0px;
+    gap: 15px;
+}
+
+.filtres li {
+    list-style: none;
+    font-size: 17px;
+    font-weight: 700;
+    border: 2px solid #D9D9D9;
+    border-radius: 25px;
+    padding: 4px 19px 4px 19px;
+}
+
+.filtres p {
+    font-size: 18px;
+}
+
+.filtres ul {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
 
 
 /* Le code ci-dessous correspond à la version responsive uniquement */
