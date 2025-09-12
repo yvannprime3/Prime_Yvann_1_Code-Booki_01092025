@@ -224,6 +224,25 @@ h1 {
     gap: 15px;
 }
 
+/******Nav-bar******/
+
+nav {
+    display: flex;
+    justify-content: space-between;
+}
+
+#lien-navigation {
+    display: flex;
+    gap: 68px;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+#logo-booki {
+    padding: 30px 50px 30px 0px;
+    height: 19px;
+}
+
 
 /* Le code ci-dessous correspond à la version responsive uniquement */
 
