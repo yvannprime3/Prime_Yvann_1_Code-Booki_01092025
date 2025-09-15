@@ -76,6 +76,13 @@ a {
     width: 65%;
 }
 
+.hebergements-cards img {
+    height: 114px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    width: 33%;
+}
+
 /****** Populaires ***********/
 .populaires {
     width: 32%;
@@ -122,6 +129,7 @@ a {
 }
 
 /******Footer******/
+
 .footer-container {
     display: flex;
     justify-content: space-between;
