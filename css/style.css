@@ -375,6 +375,32 @@ nav {
     .populaires-cards .card-subtitle {
         font-size: 13px;
     }
+
+    .filtres {
+        flex-direction: column;
+    }
+
+    .filtres p {
+        width: 100%;
+    }
+
+    .filtres ul {
+        width: 100%;
+        margin-left: -40px;
+        margin-top: 0;
+    }
+
+    .filtres li {
+        font-size: 16px;
+    }
+
+    .activites-cards img {
+        height: 200px;
+    }
+
+    .activity-card {
+        height: 270px;
+    }
 }
 
 /* Small devices (phones, less than 768px) */
