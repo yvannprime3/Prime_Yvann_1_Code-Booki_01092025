@@ -1,6 +1,7 @@
 /****** General ***********/
 * {
     font-family: 'Raleway', sans-serif;
+    /* outline: 1px solid red; */
 }
 
 :root {
@@ -239,6 +240,11 @@ a {
     max-width: 424px;
 }
 
+.search form {
+    display: flex;
+    width: 100%;
+}
+
 i.fa-solid.fa-location-dot {
     background-color: #F2F2F2;
     padding: 12px 17px;
@@ -256,14 +262,26 @@ input[type="text"] {
     font-weight: 700
 }
 
-input[type="submit"] {
+input[type="submit"],
+button[type="submit"] {
+    border: none;
     background-color: #0065FC;
     padding: 15px 16px 15px 16px;
     font-weight: bold;
     border-radius: 0px 15px 15px 0px;
     color: #ffffff;
     border: 1px #0065FC;
-    font-size: 18px;   
+    font-size: 18px;
+}
+
+
+button[type="submit"] {
+    border-radius: 15px;
+    display: none;
+}
+
+button[type="submit"] i {
+    color: white;
 }
 
 /******Header-title******/
@@ -318,8 +336,8 @@ nav {
 #lien-navigation {
     display: flex;
     gap: 68px;
-    padding-left: 50px;
-    padding-right: 50px;
+    /* padding-left: 50px;
+    padding-right: 50px; */
 }
 
 #logo-booki {
@@ -405,9 +423,34 @@ nav {
 
 /* Small devices (phones, less than 768px) */
 @media (max-width: 767.98px) {
+    body {
+        margin: 0;
+    }
+
+    header,
+    main,
+    footer {
+
+        padding: 0 20px;
+    }
+
+
+
     .main-container {
-        padding: 0 16px;
+        padding: 0;
         min-width: 320px;
+    }
+
+
+    input[type="submit"],
+    button[type="submit"] {
+        display: none;
+    }
+
+
+    button[type="submit"] {
+        display: inline-block;
+        box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
     }
 
     .hebergements-and-populaires {
@@ -460,18 +503,49 @@ nav {
 
     #lien-navigation {
         border-bottom: solid 2px #D9D9D9;
-        justify-content: space-around;
+        justify-content: center;
+        gap: 0;
         width: 100%;
         padding-bottom: 10px;
+        position: relative;
+    }
+
+    #lien-navigation a {
+        width: 50%;
+        text-align: center;
     }
 
     #lien-navigation a:hover {
         border-top: none;
     }
 
-    #lien-navigation:hover {
-        border-bottom: 2px solid #0065FC;
+    #lien-navigation a:first-child:hover::before {
+        content: '';
+        top: 29px;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        position: absolute;
+        background-color: #0065FC;
+        width: 50%;
+        height: 2px;
     }
+
+    #lien-navigation a:nth-child(2):hover::before {
+        content: '';
+        top: 29px;
+        left: 50%;
+        right: 0;
+        bottom: 0;
+        position: absolute;
+        background-color: #0065FC;
+        width: 50%;
+        height: 2px;
+    }
+
+    /* #lien-navigation:active {
+        border-bottom: 2px solid #0065FC;
+    } */
 
     .filtres ul {
         flex-wrap: wrap;
@@ -503,4 +577,3 @@ nav {
         padding: 0 10px;
     }
 }
-
